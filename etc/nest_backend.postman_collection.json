@@ -1,0 +1,123 @@
+{
+	"variables": [],
+	"info": {
+		"name": "NEST_BACKEND",
+		"_postman_id": "0a671cae-35a7-0009-0d65-ac59155d30e3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"description": "",
+			"item": [
+				{
+					"name": "[AUTH] login",
+					"request": {
+						"url": "{{API_PREFIX}}/auth/login",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"admin\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "[AUTH] registration",
+					"request": {
+						"url": "{{API_PREFIX}}/auth/registration",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test@gmail.com\",\n\t\"firstName\": \"Test1\",\n\t\"lastName\": \"Test2\",\n\t\"role\": \"admin\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "[AUTH] set-password",
+					"request": {
+						"url": "{{API_PREFIX}}/auth/set-password",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"token\": \"6825739d7f7ead71d87dd3dbe14ddae671c0026856e2a2930f3061e45aa635c8\",\n\t\"password\": \"1234\",\n\t\"userId\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RESTORE",
+			"description": "",
+			"item": [
+				{
+					"name": "[RESTORE] send-email-for-reset-password",
+					"request": {
+						"url": "{{API_PREFIX}}/restore/send-email-for-reset-password",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test@gmail.com\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "[RESTORE] reset-password",
+					"request": {
+						"url": "{{API_PREFIX}}/restore/reset-password",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"cff20936ecb9f232845b6ea1ac7320cf0f9c2e26d5e69f0f1374fc1775e04131\",\n\t\"password\": \"12346\",\n\t\"userId\": 2\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

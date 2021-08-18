@@ -1,0 +1,9 @@
+[
+	{
+		"email": "test@mail.ru",
+		"password": "$2a$12$2BnSYeyIpyBuMR0KA69acOrqcEWx0T3BqRAY.UJmyxWV74N9jAQM2",
+		"firstName": "Тест",
+		"lastName": "Тест",
+		"createdAt": "2021-08-17T08:32:05.875Z"
+	}
+]
