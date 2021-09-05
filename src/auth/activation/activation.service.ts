@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 import { TokensService } from '../tokens/tokens.service';
-import { InformationService } from '../../users/information/information.service';
+import { InformationService } from '../../mailer/information/information.service';
 import { Users } from '../../users/entities/users.entity';
 import { ConfigService } from '@nestjs/config';
 

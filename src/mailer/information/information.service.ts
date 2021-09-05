@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-import { MailService } from '../mailer/mail.service';
+import { MailService } from '../mail.service';
 import { getTemplateConfirmAccount, getTemplateResetPassword } from './templates';
 
 @Injectable()

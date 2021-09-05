@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
-import { InformationModule } from '../information/information.module';
+import { InformationModule } from '../../mailer/information/information.module';
 import { TokensModule } from '../../auth/tokens/tokens.module';
 import { RestoreController } from './restore.controller';
 import { RestoreService } from './restore.service';

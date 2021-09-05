@@ -3,7 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { hash } from 'bcrypt';
 
 import { UsersService } from '../users.service';
-import { InformationService } from '../information/information.service';
+import { InformationService } from '../../mailer/information/information.service';
 import { TokensService } from '../../auth/tokens/tokens.service';
 import { ResetPasswordDto } from './dto/reset-password.dto';
 import { Users } from '../entities/users.entity';

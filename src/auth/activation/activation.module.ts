@@ -3,7 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 
 import { ActivationService } from './activation.service';
 import { TokensModule } from '../tokens/tokens.module';
-import { InformationModule } from '../../users/information/information.module';
+import { InformationModule } from '../../mailer/information/information.module';
 
 @Module({
 	imports: [ConfigModule, TokensModule, InformationModule],
