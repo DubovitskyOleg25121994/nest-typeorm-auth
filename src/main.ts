@@ -2,7 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import * as cors from 'cors';
 import * as bodyParser from 'body-parser';
-import { ValidationPipe } from '@nestjs/common';
+import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { useContainer } from 'class-validator';
 
 import { AppModule } from './app.module';
@@ -19,6 +19,9 @@ async function bootstrap() {
 			},
 		}),
 	);
+	app.enableVersioning({
+		type: VersioningType.URI,
+	});
 
 	const config = new DocumentBuilder()
 		.addServer('/')

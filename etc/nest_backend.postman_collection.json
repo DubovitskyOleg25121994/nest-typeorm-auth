@@ -12,9 +12,9 @@
 			"description": "",
 			"item": [
 				{
-					"name": "[AUTH] login",
+					"name": "[AUTH] login_v1",
 					"request": {
-						"url": "{{API_PREFIX}}/auth/login",
+						"url": "{{API_PREFIX}}/v1/auth/login",
 						"method": "POST",
 						"header": [
 							{
@@ -32,9 +32,9 @@
 					"response": []
 				},
 				{
-					"name": "[AUTH] registration",
+					"name": "[AUTH] registration_v1",
 					"request": {
-						"url": "{{API_PREFIX}}/auth/registration",
+						"url": "{{API_PREFIX}}/v1/auth/registration",
 						"method": "POST",
 						"header": [
 							{
@@ -52,9 +52,9 @@
 					"response": []
 				},
 				{
-					"name": "[AUTH] set-password",
+					"name": "[AUTH] set-password_v1",
 					"request": {
-						"url": "{{API_PREFIX}}/auth/set-password",
+						"url": "{{API_PREFIX}}/v1/auth/set-password",
 						"method": "PUT",
 						"header": [
 							{
@@ -78,9 +78,9 @@
 			"description": "",
 			"item": [
 				{
-					"name": "[RESTORE] send-email-for-reset-password",
+					"name": "[RESTORE] send-email-for-reset-password_v1",
 					"request": {
-						"url": "{{API_PREFIX}}/restore/send-email-for-reset-password",
+						"url": "{{API_PREFIX}}/v1/restore/send-email-for-reset-password",
 						"method": "POST",
 						"header": [
 							{
@@ -98,9 +98,9 @@
 					"response": []
 				},
 				{
-					"name": "[RESTORE] reset-password",
+					"name": "[RESTORE] reset-password_v1",
 					"request": {
-						"url": "{{API_PREFIX}}/restore/reset-password",
+						"url": "{{API_PREFIX}}/v1/restore/reset-password",
 						"method": "PUT",
 						"header": [
 							{
